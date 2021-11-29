@@ -1,0 +1,695 @@
+<html>
+<head>
+	<title>portfolio website using html and css</title>		
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="port.html.css"/>
+ -->
+<style>
+
+	* {
+  box-sizing: border-box;
+}
+.head{
+		padding-left: 1%;
+		display: inline-block;
+		font-family: cursive;
+		margin:0%;
+		position:fixed;
+		top:1%;
+}
+a{
+ 	color:black;
+ 	text-decoration: none;
+ }		
+.p{
+	margin-left: 58%;
+    }		
+.h-text{
+	margin-left: 7%;
+    margin-top: 5%;
+}
+.h-text h1{
+	font-size: 80px;
+	color: #222f3e;
+	font-family: 'Crismon Text', serif;
+}
+.h-text p{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.icons i{
+	color:white;
+	background-color: CD5C5C;
+	padding:7px;
+	font-size: 20px;
+	margin:1px 0px;
+}
+.icons i:hover{
+	background:transparent;
+	transition: 0.4s;
+	border:1px solid black;
+	color:black;
+}
+.boxes{
+	background: rgb(255, 234, 167, 0.7);
+  width: 18%;
+  padding: 25%;
+  position: absolute; 
+  top: 10px; 
+  right: 10px;
+  z-index:-2;  
+ }
+ #img{
+ 	width: 450px;
+ 	height: 100%;
+ 	position:absolute;
+ 	right: 10%;
+ 	top: 10px;
+ 	z-index: -1;
+ }
+ .hlo{
+ 	text-decoration:none;
+ 	background:#01a3a4;
+ 	color:white;
+ 	font-size: 20px;
+ 	padding:10px 20px;
+ 	font-family:'bitter',serif;
+ 	border-radius: 8px;
+ }
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+ background-color:white;/*#111*/
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black/*#818181*/;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:#E9967A;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.navbar{
+  position:fixed;
+  top:1%;
+  right:1%;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+
+/*.column {
+  float: left;
+  width: 10%; 
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width:20%;
+  height:10%;
+}*/
+.row{
+	display:flex;
+}
+.column{
+	flex:33.33%;
+	padding:2px;
+	margin:2%;
+}
+/*.school{
+	border-radius: 10%;
+    }
+
+.inter{
+	margin-top: 25%;
+	border-radius: 10%;
+    width: 60%;
+    padding:5px;
+    margin-left: 40%;
+}
+.btech{
+	margin-top: 25%;
+	border-radius: 10%;
+    width: 70%;
+    margin-left: 5%;
+  padding:1%;
+
+}
+*//*#skills{
+	background-color: white;
+	padding:1%;
+	margin:1%;
+	
+}
+#Skills p{
+	font-family: cursive;
+}
+#Skills h1{
+	font-size: 200%;
+	font-family: sans-serif;
+	color:black;
+}*/
+#AboutMe{
+	padding:4%;
+	margin-top:7%;
+}
+#AboutMe p{
+	color:black;
+	font-family: cursive;
+	font-size: 25px;
+}
+#AboutMe h1{
+	font-size: 200%;
+	color:black;
+	margin:4%;
+	font-family: sans-serif;
+}
+/*#Education{
+	padding:4%;
+	margin:4%;
+}
+#Education h1{
+	font-family: sans-serif;
+	font-family:yellow;
+}
+#Education h2 h4{
+	font-family: cursive;
+}*/
+
+#ContactMe h1{
+	font-size: 200%;
+	color:black;
+	font-family:sans-serif;
+}
+#ContactMe{
+	padding:4%;
+	margin:4%;
+}
+#ContactMe i{
+	color:#71797E;
+	padding: 2%;
+	font-size: 30px;
+
+}
+#ContactMe i:hover{
+	background:transparent;
+	transition: 0.4s;
+    color:red;
+
+}
+#ContactMe p{
+	font-family: cursive;
+
+}
+.contacts p{
+	color:black;
+}
+/*.bar{
+	background-color:red;
+	box-shadow:yellow;
+	margin-bottom: 10px;
+	padding:10px;
+	border-radius: 6px;
+	transition:0.3s ease ;
+	background-color:gray;
+}
+.bar .inform{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+
+}
+.bar .inform span{
+	font-weight: 500;
+
+}
+
+
+.skillset{
+	background-color: black;
+	padding:5%;
+}
+.skillset h1{
+	color:white;
+}
+*/
+#scroll{
+	padding:15px 15px 25px;font-size:30px
+}
+
+.newClass{
+	position:fixed;
+	top:1%;
+	background-color: #FFF0F5;
+	width:100%;
+}
+p {
+			font-size: 20px;
+		}
+	
+		.container {
+			background-color: white;
+			width: 80%;
+				border-radius: 15px;
+		}
+	
+		.Skill {
+			background-color:gray;
+			color: white;
+			padding: 3px;
+			text-align: right;
+			font-size: 20px;
+			border-radius: 15px;
+		}
+		.Skill.css{
+			background-color: gray;
+			width: 50%;
+			border-radius: 15px;
+		}
+	
+		.html {
+			width: 80%;
+
+		}
+	
+		.php {
+			width: 60%;
+		}
+		.Skill.css{
+			width: 50%;
+		}
+		.Skills{
+			padding:6%;
+			margin:20%;
+		}
+		.Skills h1{
+			color:white;
+			font-family: sans-serif;
+		}
+		#Skills h1{
+			margin:5%;
+			
+		}
+		#muf{
+			margin:7%;
+		}
+		.bgimg{
+			background-color:  violet;
+			background-image: url("https://png.pngtree.com/element_our/sm/20180321/sm_02428c77c171c061c522f983fc38af4a.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: left center,right center;
+		}
+		#Education h1{
+			margin:5%;
+			font-family: sans-serif;
+		}
+		.mushi{
+			position: relative;
+			width:1200px;
+			height:300px;
+			margin:240px auto;
+
+		}
+		.mushi .box{
+			position:relative;
+			width: calc(400px - 30px);
+			height: calc(300px - 30px);
+			background:#000;
+			float:left;
+			margin:15px;
+			box-sizing: border-box;
+			overflow: hidden;
+			border-radius: 10px;
+		}
+		.mushi .box .icon{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background:#f00;
+			transition: 0.5s;
+			z-index: 1;
+		}
+		.mushi .box:hover .icon{
+			top: 20px;
+			left: calc(50% - 40px);
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+		}
+
+		.mushi .box .icon .fas{
+			position: absolute;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			font-size: 80px;
+			transition: 0.5s;
+			color:#fff;
+		}
+		.mushi .box .icon .fas{
+			font-size: 40px;
+		}
+
+		.mushi .box .murvez{
+			position: absolute;
+			height: calc(100% - 100px);
+			text-align: center;
+			padding: 20px;
+			box-sizing: border-box;
+			top:100%;
+			transition: 0.5s;
+			opacity: 0;
+		}
+		.mushi .box:hover .murvez{
+			top:100px;
+			opacity: 1;
+		}
+
+		.mushi .box .murvez h3{
+			margin:0 0 10px;
+			padding:0;
+			color:white;
+			font-size: 24px;
+		}
+
+		.mushi .box .murvez p{
+			margin:0;
+			padding:0;
+			color:white;
+		}
+
+		.mushi .box .kari{
+			position: absolute;
+			height: calc(100% - 100px);
+			text-align: center;
+			padding: 20px;
+			box-sizing: border-box;
+			top:100%;
+			transition: 0.5s;
+			opacity: 0;
+		}
+		.mushi .box:hover .kari{
+			top:100px;
+			opacity: 1;
+		}
+
+		.mushi .box .kari h3{
+			margin:0 0 10px;
+			padding:0;
+			color:white;
+			font-size: 24px;
+			align-content: center;
+		}
+
+		.mushi .box .kari p{
+			margin:6%;
+			padding:0%;
+			color:white;
+			align-content: center;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+
+
+
+
+
+<body id="demo" onscroll ="fun()">
+	<div class="namebar">
+		<div id="scroll" ></div>
+			<h1 class="head">Mushraf Abdul</h1>
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+			  <a href="#portfolio">Portfolio</a> 
+			  <a href="#AboutMe">AboutMe</a>
+			  <a href="#Skills">Skills</a>
+			  <a href="#Education">Education</a>
+			  <a href="#ContactMe">ContactMe</a>
+			</div>
+			<span class="navbar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</div>
+		<div class="h-text animate__animated animate__zoomIn">
+			<h1>Hello! I'm Mushraf,<br>a Devloper...</h1>
+			<p>I'm glad you are here! Check out my portfolio.</p>
+			<p>
+				<a class="hlo" href="#">SAY HELLO</a>
+				<a class="hlo" href="#">MORE ABOUT ME</a>
+			</p>
+		</div>	
+		<div class="icons animate__animated animate__swing">
+			<a href="https://www.instagram.com/mushraf___abdul/">
+				<i class="fab fa-instagram"></i>
+			</a></br>
+			<a href= "https://github.com/Mushrafabdul"><i class="fab fa-github"></i></a></br>
+			<a href="https://twitter.com/Mushraf__abdul"> <i class="fab fa-twitter"></i></a>
+		</div>
+		<img id="img" src="mushrafimg.jpeg"  class="animate__animated animate__slideInLeft"/>
+		<div class="boxes animate__animated animate__slideInDown"/></div>
+		</br></br></br></br></br>
+
+		<div class="bgimg">
+	    <div class="info">
+	    	
+	 		<div class="content">
+				<section id="AboutMe">
+					<h1>AboutMe</h1><hr>
+					<p>Hey! My name is Mushraf Abdul. I am currently pursuing Computer Science and Engineering at VIT(ap).I choose CSE with sepecialization in Atificial Intelligence and Machine Learning.I am member of CSI sepecial mentions group.</p>
+				</section>
+			</div>
+	<div id="Skills">
+		<h1>Skills</h1><hr>
+	<div id="muf"><p>HTML</p>
+	<div class="container">
+		<div class="Skill html">80%</div>
+	</div>
+
+	<p>PYTHON</p>
+	<div class="container">
+		<div class="Skill php">60%</div>
+	</div>
+	<p> CSS </p>
+	<div class="container">
+		<div class="Skill css">50%</div>
+	</div>
+  </div>
+    </div>
+	    <div class="content">
+			<section id="Education">
+			     <h1>EDUCATION</h1><hr>			
+               <div class="mushi">    
+               <div class="box">
+               	<div class="icon"><i class="fas fa-user-graduate"></i></div>
+               	<div class="murvez">
+               		<h3>ST.JOHN'S EM HIGH SCHOOL</h3>
+               		<p>2018-2019</p>
+               		<p>PERCENTILE:85%</p>
+               	</div>
+
+               </div>
+			     
+			     <div class="box">
+			     	<div class="icon"><i class="fas fa-book-reader"></i></div>
+			     	<div class="kari">
+               		<h3>SRI CHAITANYA</h3>
+               		<p>2019-2021</p>
+               		<p>PERCENTILE:85.5%</p>
+               	    </div>
+			     </div>
+			     <div class="box">
+	             <div class="icon"><i class="fas fa-university"></i></div>
+	             <div class="murvez">
+               		<h3>VELLORE INSTITUTE of TECHNOLOGY(AP)</h3>
+			        <P>2021-2025</P>
+               	</div>
+			     </div>
+			 		</div>      
+	</section>
+	   	</div>
+		<div class="content">
+		<section id="ContactMe">
+	    <h1>ContactMe</h1><hr>
+		    <div class="contacts">
+		    	<p class="name"><i class="far fa-user"></i>Mushraf</p>
+		    </div>
+		    <div class="contacts">
+		    	<p class="address"><i class="far fa-address-card"></i>Flat No  4F5, Boddapati Manssion, Opp. Zion Bibble School, Near ESI BusStop, Eleuru Road, Gunadala Vijayawada - 520004</p>
+		    	</div>
+		    <div class="contacts">
+		    	<p class="mail"><i class="fas fa-at"></i>mushraf9a@gmail.com</a></p></div>
+		    	<div class="contacts">
+		    	<p calss="phone"><i class="fas fa-phone-volume"></i>+91 9398565168</p></div>
+		    	
+		</section>
+	</div>
+
+
+
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	var mybutton =document.getElementById("demo");
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() 
+	{
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    			$('#scroll').addClass('newClass');
+  			} else {
+    			 $('#scroll').removeClass('newClass');
+  			}
+	}
+	function fun() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+
+	document.getElementById("demo").addEventListener("scroll", fun);  
+	function fun() {
+		$('#scroll').addClass('newClass');
+	} 
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
