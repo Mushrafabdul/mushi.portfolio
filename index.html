@@ -8,9 +8,9 @@
     <!-- <link rel="stylesheet" type="text/css" href="port.html.css"/>
  -->
 <style>
-
-	* {
-  box-sizing: border-box;
+*{
+	margin:0%;
+    box-sizing: border-box;
 }
 .head{
 		padding-left: 1%;
@@ -64,7 +64,6 @@ a{
  }
  #img{
  	width: 450px;
- 	height: 100%;
  	position:absolute;
  	right: 10%;
  	top: 10px;
@@ -120,21 +119,29 @@ a{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
-
-
-/*.column {
-  float: left;
-  width: 10%; 
-  padding: 5px;
+@media (max-width:1366px){
+	.details{
+		font-size:60px !important;
+	}
+	.h-text{
+		margin-left: 3%;
+	    margin-top: 4%;
+	}
+	#img{
+		width:30%;
+		height:45vh;
+	}
+	.mushi{
+		position: relative;
+		margin:5% 0% 5% 5%;
+	}
 }
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  width:20%;
-  height:10%;
-}*/
+@media (max-width:992px){
+	#img{
+		width:25%;
+		height:35vh;
+	}
+}
 .row{
 	display:flex;
 }
@@ -143,39 +150,6 @@ a{
 	padding:2px;
 	margin:2%;
 }
-/*.school{
-	border-radius: 10%;
-    }
-
-.inter{
-	margin-top: 25%;
-	border-radius: 10%;
-    width: 60%;
-    padding:5px;
-    margin-left: 40%;
-}
-.btech{
-	margin-top: 25%;
-	border-radius: 10%;
-    width: 70%;
-    margin-left: 5%;
-  padding:1%;
-
-}
-*//*#skills{
-	background-color: white;
-	padding:1%;
-	margin:1%;
-	
-}
-#Skills p{
-	font-family: cursive;
-}
-#Skills h1{
-	font-size: 200%;
-	font-family: sans-serif;
-	color:black;
-}*/
 #AboutMe{
 	padding:4%;
 	margin-top:7%;
@@ -191,18 +165,6 @@ a{
 	margin:4%;
 	font-family: sans-serif;
 }
-/*#Education{
-	padding:4%;
-	margin:4%;
-}
-#Education h1{
-	font-family: sans-serif;
-	font-family:yellow;
-}
-#Education h2 h4{
-	font-family: cursive;
-}*/
-
 #ContactMe h1{
 	font-size: 200%;
 	color:black;
@@ -211,6 +173,7 @@ a{
 #ContactMe{
 	padding:4%;
 	margin:4%;
+	margin-top:30%;
 }
 #ContactMe i{
 	color:#71797E;
@@ -231,36 +194,6 @@ a{
 .contacts p{
 	color:black;
 }
-/*.bar{
-	background-color:red;
-	box-shadow:yellow;
-	margin-bottom: 10px;
-	padding:10px;
-	border-radius: 6px;
-	transition:0.3s ease ;
-	background-color:gray;
-}
-.bar .inform{
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 5px;
-
-}
-.bar .inform span{
-	font-weight: 500;
-
-}
-
-
-.skillset{
-	background-color: black;
-	padding:5%;
-}
-.skillset h1{
-	color:white;
-}
-*/
 #scroll{
 	padding:15px 15px 25px;font-size:30px
 }
@@ -334,10 +267,7 @@ p {
 		}
 		.mushi{
 			position: relative;
-			width:1200px;
-			height:300px;
-			margin:240px auto;
-
+			margin:5% 0% 5% 5%;
 		}
 		.mushi .box{
 			position:relative;
@@ -438,112 +368,8 @@ p {
 			color:white;
 			align-content: center;
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 </head>
-
-
-
-
-
-
 <body id="demo" onscroll ="fun()">
 	<div class="namebar">
 		<div id="scroll" ></div>
@@ -559,7 +385,7 @@ p {
 			<span class="navbar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		</div>
 		<div class="h-text animate__animated animate__zoomIn">
-			<h1>Hello! I'm Mushraf,<br>a Devloper...</h1>
+			<h1 class="details">Hello! I'm Mushraf,<br>a Devloper...</h1>
 			<p>I'm glad you are here! Check out my portfolio.</p>
 			<p>
 				<a class="hlo" href="#">SAY HELLO</a>
@@ -651,9 +477,6 @@ p {
 		    	
 		</section>
 	</div>
-
-
-
 <script>
 	function openNav() {
 	  document.getElementById("mySidenav").style.width = "250px";
@@ -685,11 +508,3 @@ p {
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
